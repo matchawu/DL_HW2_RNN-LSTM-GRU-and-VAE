@@ -12,6 +12,7 @@
 ### 參考資料
 1. 以fc來建VAE:https://github.com/pytorch/examples/blob/master/vae/main.py
 2. 以cnn來建VAE:https://github.com/sksq96/pytorch-vae/blob/master/vae-cnn.ipynb
+3. 以cnn來建VAE:https://www.twblogs.net/a/5d07e08cbd9eee1e5c810c07
 
 ### 嘗試
 * fc vs CNN
