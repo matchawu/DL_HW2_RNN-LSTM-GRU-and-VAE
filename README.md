@@ -7,6 +7,7 @@
 
 ### 嘗試
 * gru and lstm
+* 多層 改寫
 
 ## Problem 2
 ### 參考資料
