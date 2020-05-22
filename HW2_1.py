@@ -4,11 +4,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
-import torch.optim as optim
 import torch.utils.data as Data
 from torch.autograd import Variable
-import matplotlib.pyplot as plt
 torch.manual_seed(1)
 
 # %%
@@ -312,7 +309,6 @@ plt.show()
 
 # %%
 '''World Map'''
-import pygal
 from pygal_maps_world.maps import World,COUNTRIES
 
 wmData = C_data[:,-L:]

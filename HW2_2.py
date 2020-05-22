@@ -1,18 +1,12 @@
 #%%
-import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib.patches as patches
-from PIL import Image
 import torch
 import torchvision
-import torch.optim as optim
 from torchvision import transforms
 from torch.autograd import Variable
-from torchvision.datasets import ImageFolder
 import torch.nn as nn
 import torch.nn.functional as F
 from torchvision.utils import save_image
-from random import randint
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 device = torch.device('cuda:0')
@@ -57,6 +51,7 @@ testLoader = torch.utils.data.DataLoader(
 )
 
 #%%
+# VAE
 class flatten(nn.Module):
     def forward(self, input):
         return input.view(input.size(0), -1)
@@ -156,7 +151,6 @@ if not os.path.exists('vae_results/'+str(exp_name)+'/sample_z'):
     os.makedirs('vae_results/'+str(exp_name)+'/sample_z')
 
 # %%
-import os
 def interpolation(x1,x2):
     if not os.path.exists('vae_results/'+str(exp_name)+'/interpolation'):
         os.makedirs('vae_results/'+str(exp_name)+'/interpolation')
