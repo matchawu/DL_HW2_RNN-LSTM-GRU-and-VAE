@@ -1,4 +1,5 @@
 # DL_HW2
+NCTU CM Deep Learning Course HW 2
 交大電信所深度學習作業二
 
 ## Problem 1
